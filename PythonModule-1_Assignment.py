@@ -90,3 +90,93 @@ else:
 numbers = list(map(float, input("Enter a list of numbers (comma separated): ").split(",")))
 unique_numbers = list(set(numbers))
 print("Unique values from the list:", unique_numbers)
+
+#Code -11: Write a program to unzip a list of tuples into individual lists.
+list_of_tuples = input("Enter a list of tuples (comma separated, e.g., (1,2),(3,4)): ").split(",")
+list_of_tuples = [eval(tuple_str.strip()) for tuple_str in list_of_tuples]
+unzipped = list(zip(*list_of_tuples))
+print("Unzipped lists:")
+for i, lst in enumerate(unzipped):
+    print(f"List {i + 1}:", lst)
+
+#Code -12: Write a program to convert a list of tuples into a dictionary.
+list_of_tuples = input("Enter a list of tuples (comma separated, e.g., (key1,value1),(key2,value2)): ").split(",")
+list_of_tuples = [eval(tuple_str.strip()) for tuple_str in list_of_tuples]
+result_dict = dict(list_of_tuples)
+print("Resulting dictionary:", result_dict)
+
+#Code -13: Write a program to sort a dictionary (asc/desc) by values.
+dict_to_sort = eval(input("Enter a dictionary (e.g., {'a': 3, 'b': 1, 'c': 2}): "))
+sorted_dict = dict(sorted(dict_to_sort.items(), key=lambda item: item[1]))
+print("Sorted dictionary by values:", sorted_dict)
+sorted_dict_desc = dict(sorted(dict_to_sort.items(), key=lambda item: item[1], reverse=True))
+print("Sorted dictionary by values (descending):", sorted_dict_desc)
+
+# Code -14: Write a program to find the highest 3 values in a dictionary.
+dict_to_find = eval(input("Enter a dictionary (e.g., {'a': 3, 'b': 1, 'c': 2}): "))
+sorted_items = sorted(dict_to_find.items(), key=lambda item: item[1], reverse=True)
+highest_3 = sorted_items[:3]
+print("The highest 3 values in the dictionary are:")
+for key, value in highest_3:
+    print(f"{key}: {value}")
+
+#Code -15 :Write a program to make and print the list of Fibonacci Series up to n.
+n = int(input("Enter a positive integer: "))
+fib_series = []
+a, b = 0, 1
+while a <= n:
+    fib_series.append(a)
+    a, b = b, a + b
+print("Fibonacci series up to", n, ":", fib_series)
+
+#Code -16: Write a program to count the frequencies in a list using a dictionary.
+numbers = list(map(float, input("Enter a list of numbers (comma separated): ").split(",")))
+frequency_dict = {}
+for number in numbers:
+    if number in frequency_dict:
+        frequency_dict[number] += 1
+    else:
+        frequency_dict[number] = 1
+print("Frequencies in the list:")
+for number, frequency in frequency_dict.items():
+    print(f"{number}: {frequency}")
+
+#Code -17: Write a program using function to find the sum of odd series and even series up to n.
+def sum_of_series(n):
+    odd_sum = 0
+    even_sum = 0
+    for i in range(1, n + 1):
+        if i % 2 == 0:
+            even_sum += i
+        else:
+            odd_sum += i
+    return odd_sum, even_sum
+n = int(input("Enter a positive integer: "))
+odd_sum, even_sum = sum_of_series(n)
+print("The sum of odd series up to", n, "is:", odd_sum)
+print("The sum of even series up to", n, "is:", even_sum)
+
+#Code -18: Write a program to find factorial of a number using recursion.
+def factorial(n):
+    if n == 0 or n == 1:
+        return 1
+    else:
+        return n * factorial(n - 1)
+number = int(input("Enter a positive integer: "))
+result = factorial(number)
+print("The factorial of", number, "is:", result)
+
+#Code -19: Write a program that takes a list and returns a new list with unique elements of the first list.
+original_list = input("Enter a list of elements (comma separated): ").split(",")
+unique_list = list(set(original_list))
+print("List with unique elements:", unique_list)
+
+#Code -20: Mini-Project: Password Generator
+import random
+def generate_password(length):
+    characters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()"
+    password = "".join(random.choice(characters) for _ in range(length))
+    return password
+length = int(input("Enter the desired password length: "))
+password = generate_password(length)
+print("Generated password:", password)
