@@ -27,8 +27,27 @@
 # print(f"Factorial of {num} is {factorial}")
 
 #Sum of n numbers using for loop
-n = int(input("Enter a positive integer: "))
-total_sum = 0
-for i in range(1, n + 1):
-    total_sum += i
-print(f"The sum of the first {n} natural numbers is: {total_sum}")
+# n = int(input("Enter a positive integer: "))
+# total_sum = 0
+# for i in range(1, n + 1):
+#     total_sum += i
+# print(f"The sum of the first {n} natural numbers is: {total_sum}")
+
+#Number is prime or not using for loop
+# num = int(input("Enter a number: "))
+# if num > 1:
+#     for i in range(2, int(num**0.5) + 1):
+#         if num % i == 0:
+#             print(f"{num} is not a prime number.")
+#             break
+#     else:
+#         print(f"{num} is a prime number.")
+# else:
+#     print(f"{num} is not a prime number.")
+
+#Count the number of digits in a number using for loop
+num = int(input("Enter a number: "))
+count = 0
+for digit in str(num):
+    count += 1
+print(f"The number of digits is: {count}")
