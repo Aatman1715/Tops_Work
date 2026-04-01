@@ -58,10 +58,24 @@
 # print(f"The number of digits is: {count}")
 
 #Sum of the digits in a number using while loop
+# num = int(input("Enter a number: "))
+# total_sum = 0
+# while num > 0:
+#     digit = num % 10
+#     total_sum += digit
+#     num //= 10
+# print(f"The sum of the digits is: {total_sum}")
+
+#Count total even numbers and odd numbers in the given numbers using while loop
 num = int(input("Enter a number: "))
-total_sum = 0
+even_count = 0
+odd_count = 0
 while num > 0:
     digit = num % 10
-    total_sum += digit
+    if digit % 2 == 0:
+        even_count += 1
+    else:
+        odd_count += 1
     num //= 10
-print(f"The sum of the digits is: {total_sum}")
+print(f"Total even numbers: {even_count}")
+print(f"Total odd numbers: {odd_count}")
