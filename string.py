@@ -44,3 +44,9 @@ start_index = int(input("Enter the starting index (optional, press Enter to skip
 end_index = int(input("Enter the ending index (optional, press Enter to skip): ")or len(text))
 count = text.count(substring, start_index, end_index)
 print(f"The substring '{substring}' appears {count} times in the string between index {start_index} and {end_index}.")
+
+#Program to use maxsplit parameter in split() function
+sentence = input("Enter a sentence: ")
+max_splits = int(input("Enter the maximum number of splits (optional, press Enter to skip): ")or -1)
+words = sentence.split(maxsplit=max_splits)
+print(f"The words in the sentence are: {words}")
