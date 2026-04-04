@@ -26,27 +26,55 @@
 # print(f"The character '{character}' appears {count} times in the string.")
 
 #String function using count and split to find a letter from a word in a strimg
-word = input("Enter a word: ")
-letter = input("Enter a letter to count: ")
-count = word.count(letter)
-print(f"The letter '{letter}' appears {count} times in the word '{word}'.")
+# word = input("Enter a word: ")
+# letter = input("Enter a letter to count: ")
+# count = word.count(letter)
+# print(f"The letter '{letter}' appears {count} times in the word '{word}'.")
 
 #Program to find the length of each word in a string
-sentence = input("Enter a sentence: ")
-words = sentence.split()
-for word in words:
-    print(f"The length of the word '{word}' is {len(word)}.")
+# sentence = input("Enter a sentence: ")
+# words = sentence.split()
+# for word in words:
+#     print(f"The length of the word '{word}' is {len(word)}.")
 
 #Program to use count() function parameters
-text = input("Enter a string: ")
-substring = input("Enter a substring to count: ")
-start_index = int(input("Enter the starting index (optional, press Enter to skip): ")or 0)
-end_index = int(input("Enter the ending index (optional, press Enter to skip): ")or len(text))
-count = text.count(substring, start_index, end_index)
-print(f"The substring '{substring}' appears {count} times in the string between index {start_index} and {end_index}.")
+# text = input("Enter a string: ")
+# substring = input("Enter a substring to count: ")
+# start_index = int(input("Enter the starting index (optional, press Enter to skip): ")or 0)
+# end_index = int(input("Enter the ending index (optional, press Enter to skip): ")or len(text))
+# count = text.count(substring, start_index, end_index)
+# print(f"The substring '{substring}' appears {count} times in the string between index {start_index} and {end_index}.")
 
 #Program to use maxsplit parameter in split() function
-sentence = input("Enter a sentence: ")
-max_splits = int(input("Enter the maximum number of splits (optional, press Enter to skip): ")or -1)
-words = sentence.split(maxsplit=max_splits)
-print(f"The words in the sentence are: {words}")
+# sentence = input("Enter a sentence: ")
+# max_splits = int(input("Enter the maximum number of splits (optional, press Enter to skip): ")or -1)
+# words = sentence.split(maxsplit=max_splits)
+# print(f"The words in the sentence are: {words}")
+
+#Program to use alphanum and isalpha functions
+# text = input("Enter a string: ")
+# if text.isalnum():
+#     print("The string is alphanumeric.")
+# else:
+#     print("The string is not alphanumeric.")
+
+# #String program using isdigit() function
+# text = input("Enter a string: ")
+# if text.isdigit():
+#     print("The string contains only digits.")
+# else:
+#     print("The string does not contain only digits.")
+
+#String program using indexing and slicing
+# text = input("Enter a string: ")
+# print(f"First character: {text[0]}")
+# print(f"Last character: {text[-1]}")
+# print(f"Substring from index 2 to 5: {text[2:6]}")
+# print(f"Every second character: {text[::2]}")
+
+#String program to print the reverse of string not using methods
+text = input("Enter a string: ")
+reversed_text = ""
+for char in text:
+    reversed_text = char + reversed_text
+print(f"The reverse of the string is: {reversed_text}")
