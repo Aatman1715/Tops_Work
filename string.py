@@ -72,9 +72,9 @@
 # print(f"Substring from index 2 to 5: {text[2:6]}")
 # print(f"Every second character: {text[::2]}")
 
-#String program to print the reverse of string not using methods
+#String program to print the reverse of string using len methods
 text = input("Enter a string: ")
 reversed_text = ""
-for char in text:
-    reversed_text = char + reversed_text
+for i in range(len(text) - 1, -1, -1):
+    reversed_text += text[i]
 print(f"The reverse of the string is: {reversed_text}")
