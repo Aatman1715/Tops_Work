@@ -73,8 +73,14 @@
 # print(f"Every second character: {text[::2]}")
 
 #String program to print the reverse of string using len methods
-text = input("Enter a string: ")
-reversed_text = ""
-for i in range(len(text) - 1, -1, -1):
-    reversed_text += text[i]
-print(f"The reverse of the string is: {reversed_text}")
+# text = input("Enter a string: ")
+# reversed_text = ""
+# for i in range(len(text) - 1, -1, -1):
+#     reversed_text += text[i]
+# print(f"The reverse of the string is: {reversed_text}")
+
+#Program to get the following output:
+#Shivam - mhivaS
+name = input("Enter your name: ")
+reversed_name = name[::-1]
+print(f"{name} - {reversed_name}")
