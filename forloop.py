@@ -1,4 +1,5 @@
 #Simple * pyramid pattern using for loop
+<<<<<<< HEAD
 rows = int(input("Enter the number of rows: "))
 for i in range(0, rows):  
     #Inner for loop to handle number of columns  
@@ -7,16 +8,61 @@ for i in range(0, rows):
             print("* ", end=" ")       
         #End line after each row  
         print()
+=======
+# rows = int(input("Enter the number of rows: "))
+# for i in range(0, rows):  
+#         for j in range(0, i + 1):  
+#             print("* ", end=" ")         
+#         print()
+>>>>>>> cde147e0fc7d6b9b7938299731bfd247164f0bf9
+
+#Pattern to print odd numbers in a pyramid shape using for loop
+# rows = int(input("Enter the number of rows: "))
+# num = 1
+# for i in range(0, rows):
+#     for j in range(0, i + 1):
+#         print(num, end=" ")
+#         num += 2
+#     print()
+
+#Pattern to print alphabets in a pyramid shape using for loop
+#Output:
+# A
+# A B
+# A B C
+# rows = int(input("Enter the number of rows: "))
+# for i in range(0, rows):
+#     for j in range(0, i + 1):
+#         print(chr(65 + j), end=" ")
+#     print()
+
+#Pattern for half diamond using for loop
+#Output:
+# * * * *
+# * * *
+# * *
+# *
+# *
+# * * 
+# * * * 
+# * * * *
+
+rows = int(input("Enter the number of rows: "))
+for i in range(rows, 0, -1):
+    for j in range(0, i):
+        print("* ", end="")
+    print()
+for i in range(1, rows + 1):
+    for j in range(0, i):
+        print("* ", end="")
+    print()
+
 
 #Simple alphabet pyramid pattern using for loop
 # rows = int(input("Enter the number of rows: "))  
 # for num in range(rows+1):  
-#     #Inner for loop to handle number of columns  
-#     #values change according to the outer loop  
 #         for i in range(num):  
-#             print(num, end=" ")       
-  
-#         #End line after each row  
+#             print(num, end=" ")        
 #         print()
 
 #Factorial using for loop
@@ -46,8 +92,8 @@ for i in range(0, rows):
 #     print(f"{num} is not a prime number.")
 
 #Count the number of digits in a number using for loop
-num = int(input("Enter a number: "))
-count = 0
-for digit in str(num):
-    count += 1
-print(f"The number of digits is: {count}")
+# num = int(input("Enter a number: "))
+# count = 0
+# for digit in str(num):
+#     count += 1
+# print(f"The number of digits is: {count}")
