@@ -13,6 +13,13 @@
 # print(sorted_list2)
 
 #Lambda function to sort dictionary by values
-my_dict = {'a': 3, 'b': 1, 'c': 2}
-sorted_dict = dict(sorted(my_dict.items(), key=lambda item: item[1]))
-print(sorted_dict)
+# my_dict = {'a': 3, 'b': 1, 'c': 2}
+# sorted_dict = dict(sorted(my_dict.items(), key=lambda item: item[1]))
+# print(sorted_dict)
+
+#Lambda function to find max and min in a list
+numbers = [5, 2, 9, 1, 5, 6]
+max_number = max(numbers, key=lambda x: x)
+min_number = min(numbers, key=lambda x: x)
+print("Max:", max_number)
+print("Min:", min_number)
