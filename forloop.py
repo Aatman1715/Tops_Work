@@ -1,5 +1,4 @@
 #Simple * pyramid pattern using for loop
-<<<<<<< HEAD
 rows = int(input("Enter the number of rows: "))
 for i in range(0, rows):  
     #Inner for loop to handle number of columns  
@@ -8,13 +7,13 @@ for i in range(0, rows):
             print("* ", end=" ")       
         #End line after each row  
         print()
-=======
+
 # rows = int(input("Enter the number of rows: "))
 # for i in range(0, rows):  
 #         for j in range(0, i + 1):  
 #             print("* ", end=" ")         
 #         print()
->>>>>>> cde147e0fc7d6b9b7938299731bfd247164f0bf9
+
 
 #Pattern to print odd numbers in a pyramid shape using for loop
 # rows = int(input("Enter the number of rows: "))
