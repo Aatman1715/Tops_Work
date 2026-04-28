@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+#Python code to study the comprehensive of python
+#List comprehension
+squares = [x**2 for x in range(10)]
+print(squares)
+=======
 # # Basic list comprehension
 # squares = [x**2 for x in range(10)]
 # print(squares)  # [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
@@ -34,3 +40,4 @@ cities = ["New York", "Los Angeles", "Chicago", "Houston", "Phoenix", "Philadelp
 city_length = {city: len(city) for city in cities}
 print(city_length)
 
+>>>>>>> c60a68d2055c9b500b22ce016183e7b97e394450
